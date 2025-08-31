@@ -123,6 +123,11 @@ impl Screen {
         self.grid().scrollback()
     }
 
+    /// Returns the actual number of lines in the scrollback buffer.
+    pub fn scrollback_lines(&self) -> usize {
+        self.grid().scrollback_lines()
+    }
+
     /// Returns the text contents of the terminal.
     ///
     /// This will not include any formatting information, and will be in plain
